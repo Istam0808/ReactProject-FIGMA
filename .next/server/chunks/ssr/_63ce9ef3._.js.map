@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/FonteNextJs/react-project/src/app/components/Nav/index.jsx"],"sourcesContent":["function Nav() {\r\n    return ( \r\n        <h1>nav</h1>\r\n     );\r\n}\r\n\r\nexport default Nav;"],"names":[],"mappings":";;;;;AAAA,SAAS;IACL,qBACI,8OAAC;kBAAG;;;;;;AAEZ;uCAEe","debugId":null}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file://D%3A/FonteNextJs/react-project/src/app/layout.jsx"],"sourcesContent":["import Nav from \"./components/Nav\";\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <Nav/>\n        {children}\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;;8BACC,8OAAC,yIAAA,CAAA,UAAG;;;;;gBACH;;;;;;;;;;;;AAIT","debugId":null}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":["file://D%3A/FonteNextJs/react-project/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}
