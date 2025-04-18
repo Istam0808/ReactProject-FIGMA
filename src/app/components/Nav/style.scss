@@ -1,0 +1,16 @@
+@use "../../../assets/styles/initial.scss" as *;
+@use "../../../assets/styles/globals" as *;
+
+nav {
+    background-color: #333;
+    @include flex($justify: space-between, $align: center);
+    padding: 20px 150px;
+
+    .right {
+        @include flex($gap: 20px, $justify: space-between);
+        .right-right{
+            @include flex($gap: 20px, $justify: space-between);
+        }
+
+    }
+}

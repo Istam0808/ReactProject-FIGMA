@@ -1,0 +1,43 @@
+// Gradients
+$red-gradient: linear-gradient(135deg, #FF56BB, #FF8F77);
+$red-gradient-reverse: linear-gradient(135deg, #FF8F77, #FF56BB);
+$orange-gradient: radial-gradient(circle, #FF7A91, #FFC19E, #D9D9D9);
+$pink-gradient: radial-gradient(circle, #FF7A91, #FFB2EA, #D9D9D9);
+$indigo-gradient: linear-gradient(135deg, #6E56FF, #B073FF);
+$green-gradient: linear-gradient(135deg, #56C2FF, #48FE9C);
+
+// Dark colors
+$light-gray: #F3F3F3;
+$dark-gray: #B7B7B7;
+$text-color: #6B6B6B;
+$dark: #191919;
+$black: #000;
+
+// Light colors
+$light: #eee;
+$white: #fff;
+$red: #FF56BB;
+
+// ==================================================================
+// MIXINS ===========================================================
+// ==================================================================
+@mixin flex($direction: row, $align: center, $justify: center, $gap: 10px, $wrap: no-wrap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($columns: 12, $gap: 5px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
