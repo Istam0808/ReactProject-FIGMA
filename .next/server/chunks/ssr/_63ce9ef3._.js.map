@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/FonteNextJs/react-project/src/app/components/Nav/index.jsx"],"sourcesContent":["function Nav() {\r\n    return ( \r\n        <nav>\r\n            <ul>\r\n                <li>Home</li>\r\n                <li>About</li>\r\n                <li>Contact</li>\r\n            </ul>\r\n        </nav>\r\n     );\r\n}\r\n\r\nexport default Nav;"],"names":[],"mappings":";;;;;AAAA,SAAS;IACL,qBACI,8OAAC;kBACG,cAAA,8OAAC;;8BACG,8OAAC;8BAAG;;;;;;8BACJ,8OAAC;8BAAG;;;;;;8BACJ,8OAAC;8BAAG;;;;;;;;;;;;;;;;;AAIpB;uCAEe","debugId":null}},
-    {"offset": {"line": 56, "column": 0}, "map": {"version":3,"sources":["file://D%3A/FonteNextJs/react-project/src/app/layout.jsx"],"sourcesContent":["import Nav from \"./components/Nav\";\r\n\r\n\r\nexport default function RootLayout({ children }) {\r\n  return (\r\n    <html lang=\"en\">\r\n      <body>\r\n        <Nav/>\r\n        {children}\r\n      </body>\r\n    </html>\r\n    \r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;;;AAGe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;;8BACC,8OAAC,yIAAA,CAAA,UAAG;;;;;gBACH;;;;;;;;;;;;AAKT","debugId":null}},
-    {"offset": {"line": 91, "column": 0}, "map": {"version":3,"sources":["file://D%3A/FonteNextJs/react-project/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
-}
