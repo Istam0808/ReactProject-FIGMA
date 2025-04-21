@@ -82,21 +82,284 @@ body.dark-theme table tr:hover {
 nav {
   flex-direction: row;
   flex-wrap: no-wrap;
+  z-index: 1000;
+  color: snow;
   background-color: #333;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  padding: 20px 150px;
+  height: 70px;
+  padding: 15px 40px;
+  font-family: Courier New, Courier, monospace;
+  transition: all .3s;
+  display: flex;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 5px 15px #000, -1px -5px 12px #000;
+}
+
+nav .right {
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
   display: flex;
 }
 
-nav .right, nav .right .right-right {
+nav .right .right-left {
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  display: flex;
+}
+
+nav .right .right-left a {
+  color: snow;
+  padding: 5px 0;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+nav .right .right-left a:after {
+  content: "";
+  background-color: #f60;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav .right .right-left a:hover:after {
+  width: 100%;
+}
+
+nav .right .right-left a.active {
+  color: #f60;
+}
+
+nav .right .right-left a.active:after {
+  width: 100%;
+}
+
+nav .right .right-right {
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   display: flex;
+}
+
+nav .right .right-right button {
+  color: snow;
+  cursor: pointer;
+  background-color: #f60;
+  border: 2px solid #f60;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: Courier New, Courier, monospace;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+nav .right .right-right button:hover {
+  color: #f60;
+  background-color: #0000;
+}
+
+nav .right .right-right .language-dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .right .right-right .language-dropdown .selected-lang {
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+nav .right .right-right .language-dropdown .selected-lang:hover {
+  color: #f60;
+}
+
+nav .right .right-right .language-dropdown .lang-options {
+  background-color: #333;
+  border-radius: 4px;
+  min-width: 100px;
+  position: absolute;
+  top: 100%;
+  right: -30px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px #0003;
+}
+
+nav .right .right-right .language-dropdown .lang-options div {
+  padding: 10px 15px;
+  transition: all .3s;
+}
+
+nav .right .right-right .language-dropdown .lang-options div:hover {
+  color: #f60;
+  background-color: #444;
+}
+
+.modal-overlay {
+  z-index: 1001;
+  background-color: #00000080;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.modal-overlay .modal-content {
+  color: snow;
+  backdrop-filter: blur(8px);
+  background-color: #333;
+  border: 2px solid #444;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  transition: transform .3s;
+  position: relative;
+  transform: translateY(0);
+  box-shadow: 0 8px 32px #0000004d;
+}
+
+.modal-overlay .modal-content:hover {
+  transform: translateY(-5px);
+}
+
+.modal-overlay .modal-content .close-button {
+  cursor: pointer;
+  color: snow;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 28px;
+  transition: all .3s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-overlay .modal-content .close-button:hover {
+  color: #f60;
+  transform: rotate(90deg);
+}
+
+.modal-overlay .modal-content h2 {
+  text-align: center;
+  color: #f60;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-overlay .modal-content .login-form {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.modal-overlay .modal-content .login-form input {
+  color: snow;
+  background-color: #444;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 16px;
+  transition: all .3s;
+}
+
+.modal-overlay .modal-content .login-form input::placeholder {
+  color: #888;
+}
+
+.modal-overlay .modal-content .login-form input:focus {
+  border-color: #f60;
+  outline: none;
+  box-shadow: 0 0 0 2px #f603;
+}
+
+.modal-overlay .modal-content .login-form button {
+  color: snow;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #f60;
+  border: 2px solid #f60;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.modal-overlay .modal-content .login-form button:hover {
+  color: #f60;
+  background-color: #0000;
+  transform: translateY(-2px);
+}
+
+.modal-overlay .modal-content .login-form button:active {
+  transform: translateY(0);
+}
+
+.modal-overlay .modal-content .switch-form {
+  text-align: center;
+  color: #888;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 15px;
+  transition: all .3s;
+}
+
+.modal-overlay .modal-content .switch-form:hover {
+  color: #f60;
+  text-decoration: underline;
+}
+
+.modal-overlay .modal-content .error-message {
+  color: #f44;
+  text-align: center;
+  background-color: #ff44441a;
+  border-radius: 4px;
+  margin: -10px 0 10px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.modal-overlay .confirm-btn {
+  color: snow;
+  cursor: pointer;
+  background-color: #f60;
+  border: 2px solid #f60;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px 20px;
+}
+
+.modal-overlay .cancel-btn {
+  color: snow;
+  cursor: pointer;
+  background-color: #f60;
+  border: 2px solid #f60;
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 10px 20px;
 }
 
 
