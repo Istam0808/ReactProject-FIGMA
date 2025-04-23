@@ -1,7 +1,8 @@
+import XejdFond from "./components/XedjFond"
 function Home() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <XejdFond />
     </div>
   );
 }

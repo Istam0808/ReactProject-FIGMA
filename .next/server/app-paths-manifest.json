@@ -1,8 +1,4 @@
 {
-  "/blog/page": "app/blog/page.js",
   "/comand/page": "app/comand/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/product/page": "app/product/page.js"
+  "/page": "app/page.js"
 }

@@ -1,0 +1,59 @@
+.xedj-fond {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../../../assets/images/image1.png');
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        padding: 60px 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .details-btn {
+        background-color: #8B4513;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #A0522D;
+        }
+    }
+}

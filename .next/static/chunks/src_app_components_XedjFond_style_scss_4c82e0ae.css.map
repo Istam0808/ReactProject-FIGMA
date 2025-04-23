@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/maxmu/OneDrive/Work_with_istam/ReactProject-FIGMA/src/app/components/XedjFond/style.scss.css"],"sourcesContent":[".xedj-fond{position:relative;min-height:100vh;background-image:url(\"../../../assets/images/image1.png\");background-color:#000;background-size:cover;background-position:center;background-repeat:no-repeat;color:#fff}.xedj-fond .background-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1}.xedj-fond .content{position:relative;z-index:2;padding:60px 0}.xedj-fond .container{max-width:1200px;margin:0 auto;padding:0 15px}.xedj-fond .title{font-size:48px;margin-bottom:30px;font-weight:bold}.xedj-fond .description{font-size:18px;line-height:1.6;max-width:600px;margin-bottom:40px}.xedj-fond .details-btn{background-color:#8b4513;color:#fff;border:none;padding:15px 30px;font-size:16px;cursor:pointer;transition:background-color .3s}.xedj-fond .details-btn:hover{background-color:sienna}"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAAsN;;;;;;;AAAmH;;;;;;AAA+D;;;;;;AAAoE;;;;;;AAAqE;;;;;;;AAA0F;;;;;;;;;;AAAwJ","debugId":null}}]
+}

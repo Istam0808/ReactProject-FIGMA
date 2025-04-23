@@ -1,0 +1,60 @@
+/* [project]/src/app/components/XedjFond/style.scss.css [app-client] (css) */
+.xedj-fond {
+  color: #fff;
+  background-color: #000;
+  background-image: url("../media/image1.93c0b52b.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.xedj-fond .background-overlay {
+  z-index: 1;
+  background: #00000080;
+  position: absolute;
+  inset: 0;
+}
+
+.xedj-fond .content {
+  z-index: 2;
+  padding: 60px 0;
+  position: relative;
+}
+
+.xedj-fond .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.xedj-fond .title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.xedj-fond .description {
+  max-width: 600px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.xedj-fond .details-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #8b4513;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  transition: background-color .3s;
+}
+
+.xedj-fond .details-btn:hover {
+  background-color: sienna;
+}
+
+
+/*# sourceMappingURL=src_app_components_XedjFond_style_scss_4c82e0ae.css.map*/
